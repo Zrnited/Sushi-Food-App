@@ -1,0 +1,112 @@
+.home {
+    position: relative;
+    background-color: pink;
+}
+
+.home-image {
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    background-color: aqua;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../assets/restaurant.png');
+    background-clip: border-box;
+}
+
+.home-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /* background-color: red; */
+}
+
+.home-text h1, p {
+    color: #fff;
+}
+
+.home-text h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.welcome-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #fff;
+}
+
+.home-text-action {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    place-content: center;
+    gap: 20px;
+}
+
+.button {
+    width: 200px;
+    height: 70px;
+    background-color: #F1D5BB;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.button:hover {
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+    letter-spacing: 3px;
+}
+
+@media screen and (max-width:600px) {
+    .home-text h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .welcome-text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .button {
+        width: 150px;
+        height: 45px;
+        font-size: 13px;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .home-text h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+        line-height: 30px;
+    }
+
+    .welcome-text {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .button {
+        width: 130px;
+        height: 45px;
+    }
+
+    .home-text-action {
+        margin-top: 35px;
+    }
+}

@@ -1,0 +1,504 @@
+p {
+    color: black;
+}
+
+.cart {
+    /* display: flex;
+    flex-direction: column; */
+
+
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+.cart-h1 {
+    margin-left: 220px;
+    margin-top: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.cart-hr {
+    position: absolute;
+    width: 270px;
+    height: 5px;
+    left: 224px;
+    top: 95px;
+    border: none;
+    background-color: #F1D5BB;
+    margin-bottom: 20px;
+}
+
+.cart-body-div {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    /* background-color: yellow; */
+    place-content: center;
+    padding: 30px 0px;
+}
+
+.cart-items {
+    background-color: #F1D5BB;
+    border-radius: 3px;
+    height: fit-content;
+    width: 608px;
+    min-width: 430px;
+}
+
+.food-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    /* background-color: green; */
+    margin: 20px;
+}
+
+.food-details.disabled {
+    display: none;
+}
+
+.cart-items.disabled {
+    height: 450px;
+    width: 600px;
+    text-align: center;
+    /* font-weight: bold; */
+}
+
+.no-items.enabled {
+    display: block;
+    margin-top: 40px;
+    letter-spacing: 1px;
+}
+
+.food-details img {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+}
+
+.food-name h3 {
+    font-size: 20px;
+}
+
+.food-name p {
+    font-size: 15px;
+}
+
+.quantity-controls {
+    background-color: #F1D5BB;
+    font-size: 18px;
+    border: none;
+    padding: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.quantity {
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0px 5px;
+    background-color: #fff;
+    border: none;
+}
+
+.remove-btn {
+    font-size: 15px;
+    background-color: #F1D5BB;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+.cart-info-div {
+    width: 443px;
+    /* background-color: aqua; */
+    min-width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* place-content: center; */
+    place-items: center;
+}
+
+.subtotal-div {
+    width: 85%;
+    /* background-color: brown; */
+}
+
+.subtotal-div h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+}
+
+.subtotal-div p {
+    font-size: 20px
+}
+
+.subtotal-div button {
+    width: 100%;
+    height: 78px;
+    font-size: 20px;
+    margin-top: 30px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.promo-code-div {
+    /* background-color: pink; */
+    width: 85%;
+}
+
+.promo-code-div form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.promo-code-div h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+}
+
+.promo-code-div form button {
+    width: 50%;
+    height: 70px;
+    font-size: 20px;
+    margin-top: 10px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.promo-code-div form input {
+    height: 60px;
+    border: none;
+    font-size: 20px;
+    padding: 0px 20px;
+    border: 1px solid black;
+}
+
+.promo-code-div form input:focus{
+    outline: none !important;
+    box-shadow: 0px 0px 5px 3px lightgray;
+    border: lightgray;
+}
+
+.foot-text {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* PAYMENT DIV CSS */
+
+.payment-div {
+    width: 100%;
+    background-color: #F1D5BB;
+    padding: 20px;
+    display: flex;
+    place-content: center;
+}
+
+.payment-div div {
+    display: flex;
+    gap: 20px;
+}
+
+.payment-div form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    /* background-color: green; */
+}
+
+.payment-div form input {
+    width: 300px;
+    height: 40px;
+    border: 1px solid black;
+    padding: 0px 15px ;
+    font-size: 16px;
+}
+
+.payment-div label {
+    font-size: 18px;
+}
+
+.pay-btn {
+    width: 50%;
+    background-color: lightgreen;
+    color: black;
+    height: 40px;
+    font-size: 18px;
+    border: 1px solid lightgreen;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.pay-btn:hover {
+    background-color: green;
+    color: white;
+    transition: all 0.4s ease-in-out;
+}
+
+.payment-div form input:focus{
+    outline: none !important;
+    box-shadow: 0px 0px 5px 3px lightgray;
+    border: lightgray;
+}
+
+.no-items {
+    display: none;
+}
+
+@media screen and (max-width:1440px){
+    .cart-items {
+        width: fit-content;
+    }
+
+    .cart-info-div {
+        width: 200px;
+     }
+}
+
+@media screen and (max-width:1340px){
+    .cart-items.disabled {
+        height: 450px;
+        width: fit-content;
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        /* font-weight: bold; */
+    }
+}
+
+@media screen and (max-width:1160px){
+    .cart-body-div{
+        place-content: right;
+        padding-left: 100px;
+        padding-right: 0px;
+    }
+
+    .cart-items.disabled {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:1040px){
+    .navbar {
+        left: 30px;
+        top: 50px;
+        bottom: 290px;
+    }
+
+    .cart-items {
+        width: fit-content;
+        margin-left: 0px;
+    }
+
+    .cart-info-div {
+       width: 200px;
+    }
+}
+
+@media screen and (max-width: 940px){
+    .payment-div div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:912px) {
+    .cart-h1 {
+        margin-left: 0px;
+        text-align: center;
+        margin-top: 10px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        text-decoration: underline black;
+        margin-bottom: 15px;
+        font-size: 25px;
+    }
+
+    .cart-hr {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .cart-body-div {
+        padding: 0px 20px;
+    }
+
+    .cart {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cart-items {
+        background-color: #F1D5BB;
+        border-radius: 3px;
+        height: fit-content;
+        width: 80%;
+        min-width: 430px;
+        text-align: center;
+    }
+
+    .no-items {
+        text-align: center;
+        place-self: center;
+    }
+
+    .payment-div {
+        width: 80%;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+
+    .no-items.enabled {
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width:928px) {
+    .cart-hr {
+        display: none;
+    }
+
+    .cart-h1 {
+        margin-left: 0px;
+        text-align: center;
+        text-decoration: underline;
+    }
+}
+
+@media screen and (max-width:915px){
+    .cart-items.disabled {
+        width: 85%;
+    }
+
+    .cart-body-div {
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width:450px){
+    .cart-items.disabled {
+        width: 85%;
+        min-width: 0px;
+    }
+
+    .no-items {
+        text-align: center;
+        margin-left: 10px;
+        font-size: 13px;
+    }
+
+    .cart-body-div {
+        padding: 0px 0px;
+    }
+
+    .food-details {
+        justify-content: space-evenly;
+    }
+
+    .food-details img {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+    }
+
+    .food-name h3 {
+        font-size: 15px;
+    }
+    
+    .food-name p {
+        font-size: 13px;
+        text-align: left;
+    }
+
+    /* SUBTOTAL CSS GOES HERE */
+
+    .subtotal-div h1, .promo-code-div h1 {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 5px;
+        margin-top: 10px;
+        letter-spacing: 2px;
+    }
+
+    .subtotal-div p {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .subtotal-div p strong {
+        font-size: 18px;
+    }
+    
+    .subtotal-div button, .promo-code-div form button{
+        height: 50px;
+        font-size: 15px;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .promo-code-div form input {
+        height: 50px;
+        font-size: 15px;
+    }
+
+    
+    .payment-div label {
+        font-size: 14px;
+    }
+
+    .payment-div form input {
+        width: 300px;
+        height: 40px;
+        border: 1px solid black;
+        padding: 0px 15px ;
+        font-size: 15px;
+    }
+
+
+    .payment-div {
+        width: 85%;
+        margin-top: 20px;
+        background-color: #F1D5BB;
+        padding: 20px;
+        display: flex;
+        place-content: center;
+    }
+
+    .pay-btn {
+        margin-bottom: 20px;
+    }
+
+    .foot-text {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+}
+
